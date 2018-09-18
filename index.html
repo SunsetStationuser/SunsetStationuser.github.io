@@ -1,0 +1,74 @@
+<?php
+include 'assets/app.php';
+ ?>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sunset Station</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel='stylesheet' type='text/css' href='css/normalize.css' />
+    <link rel='stylesheet' type='text/css' href='css/skeleton.css' />
+	<link rel='stylesheet' type='text/css' href='css/stars.css' />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300|Source+Sans+Pro" rel="stylesheet" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/preload.js" type="text/javascript"></script>
+    <!-- Disable preloader for those with javascript disabled-->
+    <noscript>
+      <style>
+        #preloader {
+        display: none;
+        }
+      </style>
+      </noscript>
+</head>
+
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+
+    <!-- Background parallax -->
+    <div class="container">
+        <div class="logo">
+            <h1 id="textlogo">
+                <img src="./images/SunsetLogo.png">Sunset Station</h1>
+        </div>
+        <!-- Navbar -->
+        <nav>
+            <a href="byond://sunsetstation13.com:3333" style='float: left;'><i class="fas fa-gamepad"></i><span class='hackyspace'>Join The Crew</span></a>
+            <a href="https://discord.gg/fv77sw4"><i class="fab fa-discord"></i><span class='hackyspace'>Join The Discord</span></a>
+            <a href="https://github.com/SunsetStation/SunsetStation"><i class="fab fa-github"></i><span class='hackyspace'>Github</span></a>
+	    <a href="https://wiki.sunsetstation13.com/"><i class="fab fa-wikipedia-w"></i><span class='hackyspace'>Wiki/Tutorials</span></a>
+            <a href="https://forums.Sunsetstation13.com/"><i class="far fa-comment"></i><span class='hackyspace'>View The Forums</span></a>
+        </nav>
+        <div class='heading row'>
+            <h1>Latest Announcements</h1>
+			<h1>Server Status</h1>
+        </div>
+        <div class='panel-numero-uno row'>
+            <div class="info">
+                <p>
+                  Our Lead Developer is now :Steamp0rt
+				  Paperworks Lizard(Quantum_m) is currently working with the development team tirelessly to setup the wiki.
+				  Please fill out an application on the forums for a position if you are interested in contributing to the staff, or in lore/wiki.
+				  The server launch date is still to be determined, but based on present situations, we can expect a launch much sooner than initially predicted.
+				  Please visit the github if you have any Ideas or contributions you would like to add to the server.
+                </p>
+            </div>
+            <div class="recent-pr">
+                <script src="js/retrieveGithubJson.js" >
+                </script>
+            </div>
+        </div>
+        <div id='copyright'>
+            <p>&copy; 2017-2018 SunsetStation13
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding: 15px 0;
+    background-size: 300 400;
+}
+
+/* Preloader */
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    overflow: visible;
+    background: #000;
+}
+
+#preload-image {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -100px;
+    animation: animatePreloadImage 0.7s alternate infinite;
+}
+
+@keyframes animatePreloadImage {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+
+/* Text Logo */
+
+#textlogo {
+    color: white;
+    font-size: 4em;
+    line-height: 130px;
+    letter-spacing: 10px;
+    font-family: 'Raleway';
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+    text-shadow: 2px 2px 0 #000;
+    white-space: nowrap;
+}
+
+#textlogo img {
+    float: left;
+    margin-right: 30px;
+    width: 130px;
+    height: auto;
+}
+
+/* Navbar */
+
+nav {
+    margin: 0;
+    padding: 0;
+    border-radius: 6px 6px 0 0;
+    list-style-type: none;
+    overflow: hidden;
+    background: #151515;
+    width: 100%;
+    height: 60px;
+}
+
+nav a {
+    float: right;
+    background: #151515;
+    display: block;
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-size: 0.8em;
+    line-height: 60px;
+    padding: 0 10px;
+    color: white;
+    text-decoration: none;
+    transition: box-shadow 0.2s;
+    -webkit-transition: box-shadow 0.2s;
+}
+
+nav a:hover {
+    box-shadow: inset 0 -5px 0 0 white;
+}
+
+.hackyspace {
+    margin-left: 10px;
+}
+
+/* Panels */
+
+.server-info {
+    padding: 50px;
+    background: rgb(30, 30, 30);
+    border-bottom: 20px solid #151515;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.server-info h2 {
+    font-family: 'Source Sans Pro';
+    color: white;
+    display: inline !important;
+}
+
+#g1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+#g2 {
+    padding-left: 5em;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.heading {
+    background-image: linear-gradient(transparent, #000), url(https://i.imgur.com/lJGhzEg.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    word-wrap: break-word;
+    height: 250px;
+	display: flex;
+}
+
+
+.heading h1 {
+	float: left;
+    width: 50%;
+    padding: 75px 20px;
+    font-size: 2em;
+    bottom: 0;
+    color: #fff;
+	flex: 50%;
+}
+
+.panel-numero-uno {
+    padding: 2em;
+    background: rgb(255, 255, 255);
+	flex: 50%;
+	width: 50%;
+    border-bottom: 20px solid #151515;
+}
+.panel-numero-uno p,
+.panel-numero-uno li{
+    line-height: 1.3em;
+}
+
+
+.panel-numero-uno .poster {
+    height: 500px;
+    float: right;
+    border: 1px solid #dcdcdc;
+    margin-left: 2em;
+}
+
+.info {
+    height: 500px;
+	display: flex;
+	
+}
+@media (min-width: 400px) {
+    .panel-numero-uno {
+        height: auto;
+    }
+    .panel-numero-uno img {
+        height: 500px;
+    }
+}
+/* Recent PRs */
+.recent-pr {
+    margin-top: 5em;
+}
+.pull-request {
+  margin: auto;
+  padding: 1em;
+  position: relative;
+  height: 100px;
+  border-top: 1px solid #dcdcdc;
+}
+.pull-request h5 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #000;
+}
+.pull-request a {
+    text-decoration: none;
+    color: #000;
+}
+.pull-request p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.mergestatus {
+    float: right;
+    height: 25px !important;
+    width: auto !important;
+    border: none !important;
+}
+.avatar {
+  height: 70px !important;
+  margin-top: 15px;
+  margin-left: 0 !important;
+  margin-right: 1em;
+  width: auto;
+  border-radius: 50%;
+  border: 1px solid #dcdcdc;
+  float: left !important;
+}
+.pull-request:last-child {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+/* Some other formatting idk */
+hr {
+    color: #dcdcdc;
+    width: 80%;
+}
+
+p,
+li {
+    font-size: 1.1em;
+    font-family: 'Source Sans Pro';
+}
+
+/* Small copyright notice at the bottom */
+#copyright {
+    margin-top: 10px;
+}
+
+#copyright p {
+    color: #fff;
+    font-size: 1em;
+}
